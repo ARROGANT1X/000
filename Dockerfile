@@ -1,9 +1,19 @@
-# Use an official Node.js runtime as a base image
-FROM node:18.17.0
+# Use the official Node.js image.
+# https://hub.docker.com/_/node
+FROM node:20
 
-# Clone the private repository using a Personal Access Token
-RUN git clone https://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@github.com/shamkhacha/malak.git /root/inrl
-WORKDIR /root/inrl/
-RUN npm install
-EXPOSE 8000
-CMD ["node", "index.js"]
+# Create and change to the app directory.
+WORKDIR /usr/src/app
+
+# Copy application dependency manifests to the container image.
+# A wildcard is used to ensure both package.json AND package-lock.json are copied.
+COPY package*.json ./
+
+# Install production dependencies.
+RUN npm install --only=production
+
+# Copy local code to the container image.
+COPY . .
+
+# Run the web service on container startup.
+CMD [ "npm", "start" ]

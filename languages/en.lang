@@ -20,13 +20,13 @@ mirai.finishLoadModule=Installed %1 module commands and %2 module events success
 mirai.foundPathAppstate=Found file appstate
 mirai.notFoundPathAppstate=Can't find file appstate
 mirai.checkListGban=Cheking global ban list...
-mirai.banDevice=تم حظر جهازك من استخدام كورومي ، يرجى الاتصال بـ فيسبوك https://fb.me/100090997732550 لمعرفة المزيد من المعلومات أو طلب مفتاح لإلغاء الحظر ، إذا كنت بالفعل لديك مفتاح إلغاء الحظر ، يرجى إدخاله أدناه.
+mirai.banDevice=تم حظر جهازك من استخدام كورومي، يرجى الاتصال بـ فيسبوك https://fb.me/100090997732550 لمعرفة المزيد من المعلومات أو طلب مفتاح لإلغاء الحظر، إذا كنت بالفعل لديك مفتاح إلغاء الحظر، يرجى إدخاله أدناه.
 mirai.keyNotSameFormat=Wrong format, code must contain 6 number.
 mirai.codeInputExpired=Your code is wrong or out of date.
 mirai.unbanDeviceSuccess=Your device are unban now, please restart to use.
 mirai.userBanned=You had been banned from miraiproject when %1 with reason: %2. Please contact to facebook https://fb.me/catalizCS to have more information!
 mirai.finishCheckListGban=Checked global ban list
-mirai.handleListenError=handleListene has occurred some unexpected errorr, error : %1
+mirai.handleListenError=handleListene has occurred some unexpected error, error: %1
 mirai.warningSourceCode=DETECTED THAT SOURCE CODE'S STRUCTURE HAD BEEN CHANGED, STOP NOW!
 mirai.refreshListen=Refreshed handleListener...
 mirai.successConnectDatabase=Connected to database successfully!
@@ -58,14 +58,14 @@ users.needObject=Have to be an Object
 
 # includes/handle/handleCommand.js
 
-handleCommand.userBanned= 
-handleCommand.threadBanned= 
-handleCommand.commandNotExist= 
-handleCommand.commandThreadBanned= 
-handleCommand.commandUserBanned= 
-handleCommand.threadNotAllowNSFW=   
+handleCommand.userBanned=
+handleCommand.threadBanned=
+handleCommand.commandNotExist=
+handleCommand.commandThreadBanned=
+handleCommand.commandUserBanned=
+handleCommand.threadNotAllowNSFW=
 handleCommand.cantGetInfoThread=
-handleCommand.permssionNotEnough= 
+handleCommand.permssionNotEnough=
 handleCommand.cantSetMessageReaction=Having some unexpected error at setMessageReaction, error: %1
 handleCommand.executeCommand=[ %1 ] Command used: %2 by user: %3 at thread: %4 | Args included: %5 | Processing time: %6ms
 handleCommand.commandError=Having some unexpected error when using command %1, error: %2
